@@ -1,5 +1,4 @@
 import fs from "fs";
-import { forEver } from "waitasecond";
 
 const Cite = require('citation-js');
 
@@ -24,6 +23,4 @@ config.templates.add(templateName, template);
     }).join("\n");
 
     fs.writeFileSync("data/output.html", result);
-
-    await forEver();
 })();
